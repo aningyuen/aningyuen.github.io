@@ -1,3 +1,64 @@
 body {
+    margin-left: 30;
     background-color: bisque;
+    font-family: "DM Sans" , sans-serif;
+    background: #f9ffe5;
+    font-size:large;
+    /* padding: 25px; */
+    color: #230000;
+    text-align: left;
+    
+}
+
+table {
+    /*nothing here for now*/
+}
+
+.twoup {
+    width: 50vw;
+}
+
+#coll {
+    text-align: center;
+    height: 50vh;
+    font-family:  "DM Sans" , sans-serif;
+    font-size:large;
+    color: #220707;
+}
+
+#colr {
+    border-collapse:separate;
+	border-spacing: 40px;
+    empty-cells: show;
+    
+}
+
+#colr td {
+  border: 1px solid #5d4a4a;
+  min-width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+#coll2{
+    padding-left: 60;
+    padding-right:60;
+    color: #220707;
+    font-family:  "DM Sans" , sans-serif;
+    height: 50vh;
+    border: 1px solid;
+}
+
+#poemtitle {
+    padding-left: 0;
+    color: #220707;
+    font-size: 96px;
+    font-family: "Times New Roman", serif;
+}
+
+#poemsubtitle {
+    padding-left: 0;
+    color: #220707;
+    font-size: 40px;
+    font-family: "Times New Roman", serif;
 }
