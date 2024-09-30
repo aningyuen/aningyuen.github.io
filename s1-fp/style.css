@@ -43,6 +43,8 @@ table {
 #coll2{
     padding-left: 60;
     padding-right:60;
+    padding-top: 30;
+    padding-bottom: 30;
     color: #220707;
     font-family:  "DM Sans" , sans-serif;
     height: 50vh;
@@ -52,13 +54,14 @@ table {
 #poemtitle {
     padding-left: 0;
     color: #220707;
-    font-size: 96px;
+    font-size: 36px;
     font-family: "Times New Roman", serif;
 }
 
 #poemsubtitle {
     padding-left: 0;
-    color: #220707;
-    font-size: 40px;
+    color: #796e6e;
+    font-size: 23px;
     font-family: "Times New Roman", serif;
 }
+
