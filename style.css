@@ -1,3 +1,253 @@
 body {
+    margin: 0 30px;
+
     background-color: bisque;
+    font-family: "DM Sans" , sans-serif;
+    background: #f9ffe5;
+    font-size:large;
+    /* padding: 25px; */
+    color: #230000;
+    text-align: left;
+    
+}
+
+.homelink {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+table {
+    /*nothing here for now*/
+}
+
+.twoup {
+    width: 50vw;
+}
+
+#coll {
+    text-align: center;
+    height: 50vh;
+    font-family:  "DM Sans" , sans-serif;
+    font-size:large;
+    color: #220707;
+}
+
+#colr {
+    border-collapse:separate;
+	border-spacing: 40px;
+    empty-cells: show;
+    
+}
+
+#colr td {
+  border: 1px solid #5d4a4a;
+  min-width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+#coll2{
+    padding-left: 60;
+    padding-right:60;
+    padding-top: 40;
+    padding-bottom: 40;
+    color: #220707;
+    font-family:  "DM Sans" , sans-serif;
+    /* height: vh; */
+    border: 1px solid;
+}
+
+#poemtitle {
+    padding-left: 0;
+    color: #220707;
+    font-size: 36px;
+    font-family: "Times New Roman", serif;
+}
+
+#poemsubtitle {
+    padding-left: 0;
+    color: #796e6e;
+    font-size: 23px;
+    font-family: "Times New Roman", serif;
+}
+
+#rcol {
+    width: 50vw;
+    padding-left:20px;
+   
+  }
+  
+  .border {
+    min-height: 10px;
+  }
+  
+  #a {
+    height: 200px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #5d4a4a;
+    border-right: 1px solid #5d4a4a;
+    border-left: 1px solid #5d4a4a;
+  }
+
+  #b:hover {
+    background-color: #5d4a4a;
+    cursor: pointer;
+  }
+  
+  #c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #5d4a4a;
+    border-right: 1px solid #5d4a4a;
+  }
+
+  #c:hover {
+    background-color: #5d4a4a;
+    cursor: pointer;
+  }
+  
+  #b, #c {
+    width: calc(25vw - 1.5px);
+    float: left;
+    height: 80px;
+  }
+  
+  .floatclear {
+    clear: both;
+  }
+
+#drinkquestion {
+    font-size: 23;
+    /* padding: 25px; */
+    color: #230000;
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    
+}
+
+#choicebody {
+    font-family: "DM Sans" , sans-serif;
+    font-size: 16px;
+    /* padding: 25px; */
+    color: #230000;
+}
+
+#choicebody:hover {
+    color:bisque;
+}
+#afordrink {
+    /* height: 700px; */
+    border: 1px solid;
+  }
+
+#drinktitle {
+    font-size: 23;
+    color: #230000;
+    padding-top: 45px;
+    padding-left: 45px;
+    text-align: left;
+    font-family: "Times New Roman", serif;
+}
+
+#drinkbody {
+    font-size: 16px;
+    color: #230000;
+    padding-top:15px;
+    padding-left: 45px;
+    text-align: left;
+    font-family: "DM Sans" , sans-serif;
+}
+
+#bfordrink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #5d4a4a;
+    border-right: 1px solid #5d4a4a;
+    border-left: 1px solid #5d4a4a;
+    width: calc(22vw - 1.5px);
+    float: left;
+    height: 80px;
+    background-color: #220707;
+    color:bisque;
+}
+
+#cfordrink{
+    width: calc(28vw - 1.5px);
+    float: left;
+    height: 80px;
+    border-bottom: 1px solid #5d4a4a;
+    border-right: 1px solid #5d4a4a;
+    display: flex;
+    align-items: center;
+}
+
+#drinktype1{
+    font-family: "DM Sans" , sans-serif;
+    font-size: 16px;
+    /* padding: 25px; */
+    color: rgb(255, 246, 235);
+}
+
+#strength{
+    font-family: "DM Sans" , sans-serif;
+    font-size: 16px;
+    color:#220707;
+    padding-left:40px;
+    padding-right:10px;
+}
+.circle{
+    border: 1px #220707 solid;
+    color:#220707;
+    border-radius: 100px;
+    width:10px;
+    height:10px;
+}
+#c1{
+    padding-left: 50px;
+    background-color:#5d4a4a;
+}
+
+#c2{
+    padding-left: 150px;
+    background-color:#5d4a4a;
+}
+
+
+#sangriapic{
+    padding-bottom: 45px;
+    padding-right:50px;
+    float: right;
+    width: 200px;
+    height: auto;
+    /* position:absolute;
+    bottom: 0;
+    right: 0; */
+}
+#hotriopic{
+    padding-bottom: 45px;
+    padding-right:50px;
+    float: right;
+    width: 300px;
+    height: auto;
+    /* position:absolute;
+    bottom: 0;
+    right: 0; */
+}
+a {
+    border: none;
 }
