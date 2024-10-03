@@ -13,11 +13,25 @@ body {
 
 .homelink {
     position: fixed;
-    top: 0;
-    right: 0;
-    width: 10px;
-    height: 10px;
-    background-color: red;
+    top: 10;
+    right: 10;
+    width: 60px;
+    height: 60px;
+}
+
+.homelink:hover {
+    position: fixed;
+    top: 10;
+    right: 10;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(191, 225, 255);
+    cursor: pointer;
+}
+
+#homepic {
+    width:60px;
+    height:auto;
 }
 
 table {
@@ -49,6 +63,14 @@ table {
   height: 200px;
   text-align: center;
 }
+
+#colr td:hover {
+    border: 1px solid #ffffff;
+    background-color: rgb(255, 255, 255);
+    min-width: 200px;
+    height: 200px;
+    text-align: center;
+  }
 
 #coll2{
     padding-left: 60;
@@ -227,6 +249,15 @@ table {
     background-color:#5d4a4a;
 }
 
+#c3{
+    padding-left: 80px;
+    background-color:#5d4a4a;
+}
+#c4{
+    padding-left: 100px;
+    background-color:#5d4a4a;
+}
+
 
 #sangriapic{
     padding-bottom: 45px;
@@ -243,6 +274,10 @@ table {
     padding-right:50px;
     float: right;
     width: 300px;
+    height: auto;
+}
+#poempic1{
+    width: 400px;
     height: auto;
     /* position:absolute;
     bottom: 0;
