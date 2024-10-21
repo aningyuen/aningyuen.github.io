@@ -5,6 +5,11 @@ html, body {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
 }
+
+input{
+  display:none;
+}
+
 .flipease {
   transition: 1s ease;
 }
@@ -16,6 +21,7 @@ html, body {
   transform: rotateY(0deg);
   backface-visibility: hidden;
   transform-style: preserve-3d;
+  left: calc(40vw);
 }
 .wrapper:hover {
   transform: rotateY(180deg);
@@ -23,7 +29,6 @@ html, body {
 }
 
 #front {
-/*   position: absolute; */
   width: 200px;
   height: 200px;
   background-color: #fffefc;
@@ -51,42 +56,53 @@ html, body {
   color: #6745ff;
   border-radius: 10px;
 }
+
 .imageroweven, .imagerowodd {
   position: sticky;
   top: 0px;
   width: 100vw;
   height: auto;
-  padding: 40px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
 }
 
 .imageroweven {
   animation: gradient 15s ease infinite;
-  background-image: linear-gradient( 45deg,  rgba(255,166,0,1) 14.7%, rgb(255, 196, 196) 73% );
+  background-color:bisque ;
 }
 
 .imagerowodd {
   animation: gradient 15s ease infinite;
-  background-image: linear-gradient( 45deg,  rgb(196, 228, 255) 14.7%, rgb(164, 167, 235) 73% );
+  background-image: linear-gradient( 45deg,  rgba(255,166,0,1) 14.7%, rgb(255, 196, 196) 73% );
 }
-#checkbox1:checked ~ #foo {
-  background-color: red;
+#checkbox1:checked ~ #drink {
   opacity:1;
 }
 
+.beautifullycentered {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: red;
+}
 
-#illustration{
+#glass{
+  position: relative;
   width: 500px;
   height: 500px;
+  left: calc(50vw - 250px);
+
 }
-#foo {
-  opacity: 0;
-  background-color: black;
-  width: 200px;
-  height: 200px;
+
+#drink{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: calc(50vw - 250px);
+  top: 0;
+  opacity:0;
 }
+
+
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
