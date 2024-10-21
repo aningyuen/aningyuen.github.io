@@ -1,0 +1,100 @@
+
+html, body {
+  margin: 0;
+  position: relative;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+}
+.flipease {
+  transition: 1s ease;
+}
+
+.wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.wrapper:hover {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+#front {
+/*   position: absolute; */
+  width: 200px;
+  height: 200px;
+  background-color: #fffefc;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color:#0d0040;
+  border-radius: 10px;
+}
+
+#back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #e8e1d1;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #6745ff;
+  border-radius: 10px;
+}
+.imageroweven, .imagerowodd {
+  position: sticky;
+  top: 0px;
+  width: 100vw;
+  height: auto;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.imageroweven {
+  animation: gradient 15s ease infinite;
+  background-image: linear-gradient( 45deg,  rgba(255,166,0,1) 14.7%, rgb(255, 196, 196) 73% );
+}
+
+.imagerowodd {
+  animation: gradient 15s ease infinite;
+  background-image: linear-gradient( 45deg,  rgb(196, 228, 255) 14.7%, rgb(164, 167, 235) 73% );
+}
+#checkbox1:checked ~ #foo {
+  background-color: red;
+  opacity:1;
+}
+
+
+#illustration{
+  width: 500px;
+  height: 500px;
+}
+#foo {
+  opacity: 0;
+  background-color: black;
+  width: 200px;
+  height: 200px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
