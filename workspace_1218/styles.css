@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8f8f5;
+    min-height: 100vh;
+    padding: 40px;
+    color: #1a1a1a;
+}
+
+.signature {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.time-block {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.time-block:hover {
+    background: #FF9B7B10;
+}
+
+.time-block span {
+    display: block;
+}
+
+.time-block .number {
+    font-size: 2.5rem;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 8px;
+}
+
+.label {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.doors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.door {
+    aspect-ratio: 1;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.door-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.door.open .door-inner {
+    transform: rotateY(180deg);
+}
+
+.door-front,
+.door-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 4px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.door:nth-child(odd) .door-back {
+    background: #FF9B7B10;
+    border-color: #FF9B7B30;
+}
+
+.door:nth-child(even) .door-back {
+    background: #B7D5EE10;
+    border-color: #B7D5EE30;
+}
+
+.door-front:hover {
+    border-color: #FF9B7B50;
+}
+
+.door-front {
+    font-family: 'DM Serif Display', serif;
+}
+
+.door-back {
+    transform: rotateY(180deg);
+    text-align: left;
+    padding: 25px;
+}
+
+.door-number {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+}
+
+.door-back h3 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.door:nth-child(odd) .door-back h3 {
+    color: #FF9B7B;
+}
+
+.door:nth-child(even) .door-back h3 {
+    color: #B7D5EE;
+}
+
+.door-back p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    .countdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Add these new styles to your existing CSS file */
+
+.door-back {
+    /* Update existing door-back styles */
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.door-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: auto;
+}
+
+.door-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #FF9B7B;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.door:nth-child(even) .door-link {
+    background: #B7D5EE;
+}
+
+.door-link:hover {
+    opacity: 0.9;
+}
+
+/* Ensure content doesn't overflow */
+.door-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
